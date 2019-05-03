@@ -21,3 +21,6 @@ Route::group(['prefix' => 'test'],
         Route::get('babs', 'TestController@testBabs');
     }
 );
+Route::get('/beschikbaarheid', function () {
+    return view('beschikbaarheid');
+});
