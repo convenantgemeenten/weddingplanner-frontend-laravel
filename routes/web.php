@@ -18,5 +18,6 @@ Route::get('/', function () {
 Route::group(['prefix' => 'test'], 
     function() {
         Route::get('locations', 'TestController@testLocations');
+        Route::get('babs', 'TestController@testBabs');
     }
 );

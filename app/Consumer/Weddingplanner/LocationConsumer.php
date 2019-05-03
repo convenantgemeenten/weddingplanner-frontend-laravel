@@ -32,6 +32,31 @@ class LocationConsumer extends WeddingplannerConsumer {
         return $aLocations;
     }
 
+    /**
+     * Gets a detailed list of locations
+     * 
+     * Example response: 
+     * 0]=>
+     *   array(7) {
+     *       ["id"]=>
+     *      string(32) "convenantgemeenten.nl/place/1731"
+     *       ["url"]=>
+     *       string(16) "www.medemblik.nl"
+     *       ["naam"]=>
+     *       string(23) "Gemeentehuis - Raadzaal"
+     *       ["email"]=>
+     *       NULL
+     *       ["telefoon"]=>
+     *       string(10) "0229856000"
+     *       ["prijs"]=>
+     *       string(5) "50.00"
+     *       ["capaciteit"]=>
+     *      string(3) "200"
+     *   }
+     * 
+     * @return array
+     * 
+     */
     public function getDetailedLocationList(): array {
         $aLocationList = $this->getLocationList();
         $aDetailedLocations = [];
@@ -49,9 +74,8 @@ class LocationConsumer extends WeddingplannerConsumer {
                 'prijs'      => @$aJSON['prijs']['@value'],
                 'capaciteit' => @$aJSON['maxpersonen']['@value']
             ];
-        
         }
 
-        return $aDetailedLocations;
+       return $aDetailedLocations;
    }
 }
