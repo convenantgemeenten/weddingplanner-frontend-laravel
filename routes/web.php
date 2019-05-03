@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::group(['prefix' => 'test'], 
+    function() {
+        Route::get('locations', 'TestController@testLocations');
+    }
+);
