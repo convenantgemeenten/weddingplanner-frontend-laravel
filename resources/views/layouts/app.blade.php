@@ -17,20 +17,20 @@
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
        
 
-        <link href='{{ URL::asset('fullcalendar/packages/core/main.css') }}' rel='stylesheet' />
+        {{-- <link href='{{ URL::asset('fullcalendar/packages/core/main.css') }}' rel='stylesheet' />
         <link href='{{ URL::asset('fullcalendar/packages/daygrid/main.css') }}' rel='stylesheet' />
         <script src='{{ URL::asset('fullcalendar/packages/core/main.js') }}'></script>
         <script src='{{ URL::asset('fullcalendar/packages/interaction/main.js') }}'></script>
         <script src='{{ URL::asset('fullcalendar/packages/daygrid/main.js') }}'></script>
 
-        <link href='{{ URL::asset('css/style.css') }}' rel='stylesheet' />
+        <link href='{{ URL::asset('css/style.css') }}' rel='stylesheet' /> --}}
 
-        {{-- <link href='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/core/main.css' rel='stylesheet' />
-        <link href='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
-        <script src='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/core/main.js'></script>
-        <script src='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/interaction/main.js'></script>
-        <script src='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/daygrid/main.js'></script>
-        <link href="/weddingplanner-frontend-laravel-master/public/css/style.css" rel='stylesheet' />      --}}
+        <link href='/fullcalendar/packages/core/main.css' rel='stylesheet' />
+        <link href='/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+        <script src='/fullcalendar/packages/core/main.js'></script>
+        <script src='/fullcalendar/packages/interaction/main.js'></script>
+        <script src='/fullcalendar/packages/daygrid/main.js'></script>
+        <link href="/css/style.css" rel='stylesheet' />     
         
     </head>
     <body>
