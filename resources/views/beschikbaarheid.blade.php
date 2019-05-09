@@ -6,7 +6,7 @@
 
 @section('header')
     @parent
-    <script src='{{ URL::asset('js/planner.js') }}'></script>
+    <script src='/js/planner.js'></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
       var calendarEl = document.getElementById('calendar')
