@@ -23,14 +23,14 @@
         <script src='{{ URL::asset('fullcalendar/packages/interaction/main.js') }}'></script>
         <script src='{{ URL::asset('fullcalendar/packages/daygrid/main.js') }}'></script>
 
-        <link href='{{ URL::asset('css/style.js') }}' rel='stylesheet' />
+        <link href='{{ URL::asset('css/style.css') }}' rel='stylesheet' />
 
-        <link href='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/core/main.css' rel='stylesheet' />
+        {{-- <link href='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/core/main.css' rel='stylesheet' />
         <link href='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
         <script src='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/core/main.js'></script>
         <script src='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/interaction/main.js'></script>
         <script src='/weddingplanner-frontend-laravel-master/public/fullcalendar/packages/daygrid/main.js'></script>
-        <link href="/weddingplanner-frontend-laravel-master/public/css/style.css" rel='stylesheet' />     
+        <link href="/weddingplanner-frontend-laravel-master/public/css/style.css" rel='stylesheet' />      --}}
         
     </head>
     <body>
