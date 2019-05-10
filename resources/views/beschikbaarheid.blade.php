@@ -170,17 +170,17 @@
               </div>
               <div class="col-10">
                   <div class="row plannerOptions a1 ambt">
-                    <div class="col-1 Timeslot1" data-ambt="1" data-timeslot="1"><input type="checkbox" name="ts1a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot2" data-ambt="1" data-timeslot="2"><input type="checkbox" name="ts2a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot3" data-ambt="1" data-timeslot="3"><input type="checkbox" name="ts3a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot4" data-ambt="1" data-timeslot="4"><input type="checkbox" name="ts4a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot5" data-ambt="1" data-timeslot="5"><input type="checkbox" name="ts5a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot6" data-ambt="1" data-timeslot="6"><input type="checkbox" name="ts6a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot7" data-ambt="1" data-timeslot="7"><input type="checkbox" name="ts7a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot8" data-ambt="1" data-timeslot="8"><input type="checkbox" name="ts8a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot9" data-ambt="1" data-timeslot="9"><input type="checkbox" name="ts9a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot10" data-ambt="1" data-timeslot="10"><input type="checkbox" name="ts10a0" />&nbsp;</div>
-                    <div class="col-1 Timeslot11" data-ambt="1" data-timeslot="11"><input type="checkbox" name="ts11a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot1" data-ambt="0" data-timeslot="1"><input type="checkbox" name="ts1a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot2" data-ambt="0" data-timeslot="2"><input type="checkbox" name="ts2a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot3" data-ambt="0" data-timeslot="3"><input type="checkbox" name="ts3a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot4" data-ambt="0" data-timeslot="4"><input type="checkbox" name="ts4a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot5" data-ambt="0" data-timeslot="5"><input type="checkbox" name="ts5a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot6" data-ambt="0" data-timeslot="6"><input type="checkbox" name="ts6a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot7" data-ambt="0" data-timeslot="7"><input type="checkbox" name="ts7a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot8" data-ambt="0" data-timeslot="8"><input type="checkbox" name="ts8a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot9" data-ambt="0" data-timeslot="9"><input type="checkbox" name="ts9a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot10" data-ambt="0" data-timeslot="10"><input type="checkbox" name="ts10a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot11" data-ambt="0" data-timeslot="11"><input type="checkbox" name="ts11a0" />&nbsp;</div>
                   </div>
               </div>
           </div>
@@ -195,17 +195,17 @@
                 </div>
                 <div class="col-10">
                     <div class="row plannerOptions a1 ambt">
-                      <div class="col-1 Timeslot1" data-ambt="1" data-timeslot="1"><input type="checkbox" name="ts1a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot2" data-ambt="1" data-timeslot="2"><input type="checkbox" name="ts2a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot3" data-ambt="1" data-timeslot="3"><input type="checkbox" name="ts3a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot4" data-ambt="1" data-timeslot="4"><input type="checkbox" name="ts4a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot5" data-ambt="1" data-timeslot="5"><input type="checkbox" name="ts5a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot6" data-ambt="1" data-timeslot="6"><input type="checkbox" name="ts6a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot7" data-ambt="1" data-timeslot="7"><input type="checkbox" name="ts7a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot8" data-ambt="1" data-timeslot="8"><input type="checkbox" name="ts8a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot9" data-ambt="1" data-timeslot="9"><input type="checkbox" name="ts9a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot10" data-ambt="1" data-timeslot="10"><input type="checkbox" name="ts10a{{ $idx + 1 }}" />&nbsp;</div>
-                      <div class="col-1 Timeslot11" data-ambt="1" data-timeslot="11"><input type="checkbox" name="ts11a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot1" data-ambt="{{ $idx + 1 }}" data-timeslot="1"><input type="checkbox" name="ts1a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot2" data-ambt="{{ $idx + 1 }}" data-timeslot="2"><input type="checkbox" name="ts2a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot3" data-ambt="{{ $idx + 1 }}" data-timeslot="3"><input type="checkbox" name="ts3a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot4" data-ambt="{{ $idx + 1 }}" data-timeslot="4"><input type="checkbox" name="ts4a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot5" data-ambt="{{ $idx + 1 }}" data-timeslot="5"><input type="checkbox" name="ts5a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot6" data-ambt="{{ $idx + 1 }}" data-timeslot="6"><input type="checkbox" name="ts6a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot7" data-ambt="{{ $idx + 1 }}" data-timeslot="7"><input type="checkbox" name="ts7a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot8" data-ambt="{{ $idx + 1 }}" data-timeslot="8"><input type="checkbox" name="ts8a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot9" data-ambt="{{ $idx + 1 }}" data-timeslot="9"><input type="checkbox" name="ts9a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot10" data-ambt="{{ $idx + 1 }}" data-timeslot="10"><input type="checkbox" name="ts10a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot11" data-ambt="{{ $idx + 1 }}" data-timeslot="11"><input type="checkbox" name="ts11a{{ $idx + 1 }}" />&nbsp;</div>
                     </div>
                 </div>
             </div>
