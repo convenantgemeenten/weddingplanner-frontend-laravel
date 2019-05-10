@@ -39,6 +39,14 @@ header #hdrPrice .price{
     max-width: 900px;
     margin: 0 auto;
   }
+  #calendar .fc-event{
+    background-color:#009688;
+    color:#FFF;
+  }
+  .fc-day{cursor:pointer;}
+  .selectedDate{
+      background-color:#ABD8D4;
+    }
   #planner .row{
     margin:0;
   }
@@ -73,7 +81,7 @@ header #hdrPrice .price{
   #planner .row{
     margin-bottom:1px;
   }
-  #planner .row:hover .col-1{
+  #plannerContent .row:hover .col-1{
     background-color:#ABD8D4;
   }
   #planner .row, #planner .col-1{
@@ -81,6 +89,8 @@ header #hdrPrice .price{
   }
   #planner .col-1{
     margin-right:1px;
+  }
+  #plannerContent .col-1{
     cursor:pointer;
   }
   #planner .col-1 input{

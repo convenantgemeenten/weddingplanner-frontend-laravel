@@ -7,7 +7,7 @@
         <title>Weddingplanner - @yield('title')</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="{{ URL::asset('css/datepicker3.css') }}"> -->
-        <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <!-- <script src="{{ URL::asset('js/bootstrap-datepicker.js') }}"></script>
         <script src="{{ URL::asset('js/locales/bootstrap-datepicker.nl.js') }}"></script> -->
@@ -31,6 +31,12 @@
         <script src='/fullcalendar/packages/interaction/main.js'></script>
         <script src='/fullcalendar/packages/daygrid/main.js'></script>
         <link href="/css/style.css" rel='stylesheet' />     
+        <link href='/weddingplanner-frontend-laravel/public/fullcalendar/packages/core/main.css' rel='stylesheet' />
+        <link href='/weddingplanner-frontend-laravel/public/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+        <script src='/weddingplanner-frontend-laravel/public/fullcalendar/packages/core/main.js'></script>
+        <script src='/weddingplanner-frontend-laravel/public/fullcalendar/packages/interaction/main.js'></script>
+        <script src='/weddingplanner-frontend-laravel/public/fullcalendar/packages/daygrid/main.js'></script>
+        <link href="/weddingplanner-frontend-laravel/public/css/style.css" rel='stylesheet' />     
         
     </head>
     <body>
