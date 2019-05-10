@@ -26,7 +26,7 @@ class LocationConsumer extends WeddingplannerConsumer {
         
         foreach ($aJSON['@graph']['@value'] as $aLocation) {
             
-            $aLocations[] = parse_url('http://api.' . $aLocation['@id'], PHP_URL_PATH); // @todo: prefix weghalen zodra die uit de API is
+            $aLocations[] =  parse_url( $aLocation['@id'], PHP_URL_PATH); // @todo: prefix weghalen zodra die uit de API is
         }
 
         return $aLocations;
@@ -64,7 +64,7 @@ class LocationConsumer extends WeddingplannerConsumer {
         foreach ($aLocationList as $sLocation) {
             $sResponse = $this -> _request($sLocation);
             $aJSON = json_decode($sResponse, true);
-            
+      
             $aDetailedLocations[] =  [
                 'id'         => @$aJSON['@id'],
                 'url'        => @$aJSON['url'],
