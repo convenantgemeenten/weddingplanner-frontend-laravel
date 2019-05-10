@@ -12,7 +12,7 @@ class AvailabilityController extends Controller {
             ' beschikbaarheid',
             [
                 'locations' => (new LocationConsumer())->getDetailedLocationList()
-                , 'babs' =>  (new BabsConsumer())->getDetailedBabsList()
+                , 'babsen' =>  (new BabsConsumer())->getDetailedBabsList()
                 , 'message' => ''
             ]
         );

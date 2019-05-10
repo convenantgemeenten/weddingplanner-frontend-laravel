@@ -120,54 +120,32 @@
             </div>
           </div><!-- /plannerHeader-->
           <div id="plannerContent">
-
+            @foreach($locations as $idx => $loc)
             <div class="row"><!--Locatie 1-->
                 <div class="col-2 plannerIntro">
                   <div class="row">
-                    <div class="col-2"><a href="#" data-toggle="modal" data-target="#modal_l1"><div>i</div></a></div>
-                    <div class="col-10 textRight">Gemeentehuis</div>
+                    <div class="col-2"><a href="#" data-toggle="modal" data-target="#modal_l{{ $idx }}"><div>i</div></a></div>
+                  <div class="col-10 textRight">{{ $loc['naam'] }}</div>
                   </div>
                 </div>
                 <div class="col-10">
-                    <div class="row plannerOptions l1 location">
-                      <div class="col-1 Timeslot1" data-location="1" data-timeslot="1"><input type="checkbox" name="ts1l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot2" data-location="1" data-timeslot="2"><input type="checkbox" name="ts2l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot3" data-location="1" data-timeslot="3"><input type="checkbox" name="ts3l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot4" data-location="1" data-timeslot="4"><input type="checkbox" name="ts4l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot5" data-location="1" data-timeslot="5"><input type="checkbox" name="ts5l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot6" data-location="1" data-timeslot="6"><input type="checkbox" name="ts6l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot7" data-location="1" data-timeslot="7"><input type="checkbox" name="ts7l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot8" data-location="1" data-timeslot="8"><input type="checkbox" name="ts8l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot9" data-location="1" data-timeslot="9"><input type="checkbox" name="ts9l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot10" data-location="1" data-timeslot="10"><input type="checkbox" name="ts10l1" />&nbsp;</div>
-                      <div class="col-1 Timeslot11" data-location="1" data-timeslot="11"><input type="checkbox" name="ts11l1" />&nbsp;</div>
+                    <div class="row plannerOptions l{{ $idx }} location">
+                      <div class="col-1 Timeslot1" data-location="1" data-timeslot="1"><input type="checkbox" name="ts1l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot2" data-location="1" data-timeslot="2"><input type="checkbox" name="ts2l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot3" data-location="1" data-timeslot="3"><input type="checkbox" name="ts3l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot4" data-location="1" data-timeslot="4"><input type="checkbox" name="ts4l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot5" data-location="1" data-timeslot="5"><input type="checkbox" name="ts5l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot6" data-location="1" data-timeslot="6"><input type="checkbox" name="ts6l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot7" data-location="1" data-timeslot="7"><input type="checkbox" name="ts7l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot8" data-location="1" data-timeslot="8"><input type="checkbox" name="ts8l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot9" data-location="1" data-timeslot="9"><input type="checkbox" name="ts9l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot10" data-location="1" data-timeslot="10"><input type="checkbox" name="ts10l{{ $idx }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot11" data-location="1" data-timeslot="11"><input type="checkbox" name="ts11l{{ $idx }}" />&nbsp;</div>
                     </div>
                 </div>
             </div>
+            @endforeach
 
-            <div class="row"><!--Locatie 2-->
-                <div class="col-2 plannerIntro">
-                  <div class="row">
-                    <div class="col-2"><a href="#" data-toggle="modal" data-target="#modal_l2"><div>i</div></a></div>
-                    <div class="col-10 textRight">Eigen locatie</div>
-                  </div>
-                </div>
-                <div class="col-10">
-                    <div class="row plannerOptions l2 location">
-                      <div class="col-1 Timeslot1" data-location="2" data-timeslot="1"><input type="checkbox" name="ts1l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot2" data-location="2" data-timeslot="2"><input type="checkbox" name="ts2l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot3" data-location="2" data-timeslot="3"><input type="checkbox" name="ts3l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot4" data-location="2" data-timeslot="4"><input type="checkbox" name="ts4l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot5" data-location="2" data-timeslot="5"><input type="checkbox" name="ts5l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot6" data-location="2" data-timeslot="6"><input type="checkbox" name="ts6l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot7" data-location="2" data-timeslot="7"><input type="checkbox" name="ts7l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot8" data-location="2" data-timeslot="8"><input type="checkbox" name="ts8l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot9" data-location="2" data-timeslot="9"><input type="checkbox" name="ts9l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot10" data-location="2" data-timeslot="10"><input type="checkbox" name="ts10l2" />&nbsp;</div>
-                      <div class="col-1 Timeslot11" data-location="2" data-timeslot="11"><input type="checkbox" name="ts11l2" />&nbsp;</div>
-                    </div>
-                </div>
-            </div>
             <div class="row grey">
               <div class="col-2 plannerIntro">
                 <div class="row">
@@ -181,79 +159,99 @@
                   </div>
               </div>
             </div>
+
+            <!-- BABS geen voorkeur -->
+            <div class="row"><!--Ambtenaar 1-->
+              <div class="col-2 plannerIntro">
+                <div class="row">
+                  <div class="col-2"><a href="#"  data-toggle="modal" data-target="#modal_a0"><div>i</div></a></div>
+                  <div class="col-10 textRight">Geen voorkeur</div>
+                </div>
+              </div>
+              <div class="col-10">
+                  <div class="row plannerOptions a1 ambt">
+                    <div class="col-1 Timeslot1" data-ambt="1" data-timeslot="1"><input type="checkbox" name="ts1a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot2" data-ambt="1" data-timeslot="2"><input type="checkbox" name="ts2a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot3" data-ambt="1" data-timeslot="3"><input type="checkbox" name="ts3a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot4" data-ambt="1" data-timeslot="4"><input type="checkbox" name="ts4a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot5" data-ambt="1" data-timeslot="5"><input type="checkbox" name="ts5a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot6" data-ambt="1" data-timeslot="6"><input type="checkbox" name="ts6a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot7" data-ambt="1" data-timeslot="7"><input type="checkbox" name="ts7a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot8" data-ambt="1" data-timeslot="8"><input type="checkbox" name="ts8a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot9" data-ambt="1" data-timeslot="9"><input type="checkbox" name="ts9a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot10" data-ambt="1" data-timeslot="10"><input type="checkbox" name="ts10a0" />&nbsp;</div>
+                    <div class="col-1 Timeslot11" data-ambt="1" data-timeslot="11"><input type="checkbox" name="ts11a0" />&nbsp;</div>
+                  </div>
+              </div>
+          </div>
+
+            @foreach($babsen as $idx => $babs)
             <div class="row"><!--Ambtenaar 1-->
                 <div class="col-2 plannerIntro">
                   <div class="row">
-                    <div class="col-2"><a href="#"  data-toggle="modal" data-target="#modal_a1"><div>i</div></a></div>
-                    <div class="col-10 textRight">Geen voorkeur</div>
+                    <div class="col-2"><a href="#"  data-toggle="modal" data-target="#modal_a{{ $idx + 1 }}"><div>i</div></a></div>
+                  <div class="col-10 textRight">{{ $babs['voornaam'] }} {{ $babs['achternaam'] }}</div>
                   </div>
                 </div>
                 <div class="col-10">
                     <div class="row plannerOptions a1 ambt">
-                      <div class="col-1 Timeslot1" data-ambt="1" data-timeslot="1"><input type="checkbox" name="ts1a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot2" data-ambt="1" data-timeslot="2"><input type="checkbox" name="ts2a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot3" data-ambt="1" data-timeslot="3"><input type="checkbox" name="ts3a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot4" data-ambt="1" data-timeslot="4"><input type="checkbox" name="ts4a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot5" data-ambt="1" data-timeslot="5"><input type="checkbox" name="ts5a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot6" data-ambt="1" data-timeslot="6"><input type="checkbox" name="ts6a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot7" data-ambt="1" data-timeslot="7"><input type="checkbox" name="ts7a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot8" data-ambt="1" data-timeslot="8"><input type="checkbox" name="ts8a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot9" data-ambt="1" data-timeslot="9"><input type="checkbox" name="ts9a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot10" data-ambt="1" data-timeslot="10"><input type="checkbox" name="ts10a1" />&nbsp;</div>
-                      <div class="col-1 Timeslot11" data-ambt="1" data-timeslot="11"><input type="checkbox" name="ts11a1" />&nbsp;</div>
+                      <div class="col-1 Timeslot1" data-ambt="1" data-timeslot="1"><input type="checkbox" name="ts1a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot2" data-ambt="1" data-timeslot="2"><input type="checkbox" name="ts2a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot3" data-ambt="1" data-timeslot="3"><input type="checkbox" name="ts3a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot4" data-ambt="1" data-timeslot="4"><input type="checkbox" name="ts4a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot5" data-ambt="1" data-timeslot="5"><input type="checkbox" name="ts5a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot6" data-ambt="1" data-timeslot="6"><input type="checkbox" name="ts6a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot7" data-ambt="1" data-timeslot="7"><input type="checkbox" name="ts7a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot8" data-ambt="1" data-timeslot="8"><input type="checkbox" name="ts8a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot9" data-ambt="1" data-timeslot="9"><input type="checkbox" name="ts9a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot10" data-ambt="1" data-timeslot="10"><input type="checkbox" name="ts10a{{ $idx + 1 }}" />&nbsp;</div>
+                      <div class="col-1 Timeslot11" data-ambt="1" data-timeslot="11"><input type="checkbox" name="ts11a{{ $idx + 1 }}" />&nbsp;</div>
                     </div>
                 </div>
             </div>
+            @endforeach
           <div id="selectedDateTimeslot"></div>
           </div><!-- /plannerContent-->
 
           <!--MODALS-->
-          <div class="modal" id="modal_l1" tabindex="-1" role="dialog"><!--Locatie 1-->
+          @foreach($locations as $idx => $loc)
+          <div class="modal" id="modal_l{{ $idx }}" tabindex="-1" role="dialog"><!--Locatie {{ $idx }} -->
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Gemeentehuis</h5>
+                  <h5 class="modal-title">{{ $loc['naam'] }}</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Gemeentehuis info.</p>
+                  <p>{{ $loc['email'] }}</p>
+                  <p>{{ $loc['telefoon'] }}</p>
+                  <p>&euro; {{ $loc['prijs'] }}</p>
+                  <p>Capaciteit: {{ $loc['capaciteit'] }}</p>
                 </div>
               </div>
             </div>
           </div>
+          @endforeach
 
-          <div class="modal" id="modal_l2" tabindex="-1" role="dialog"><!--Locatie 2-->
+          @foreach($babsen as $idx => $babs)
+          <div class="modal" id="modal_a{{ $idx + 1 }}" tabindex="-1" role="dialog"><!--Ambtenaar 1-->
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title">Eigen locatie</h5>
+                  <h5 class="modal-title">{{ $babs['voornaam'] }}  {{ $babs['achternaam'] }}</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>Eigen locatie info.</p>
+                  <p>{{ $babs['omschrijving'] }}</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="modal" id="modal_a1" tabindex="-1" role="dialog"><!--Ambtenaar 1-->
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title">Ambtenaar 1</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <p>Ambtenaar 1 info.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          @endforeach
           <!--/MODALS-->
           
         </div>
@@ -271,10 +269,11 @@
               </div>
               <div class="col-6">
                 <select id="functionaryFirst" class="@error('functionaryFirst') is-invalid @enderror">
+
                   <option value="0">Geen keuze</option>
-                  <option value="1">Babs een</option>
-                  <option value="2">Babs twee</option>
-                  <option value="3">Babs drie</option>
+                  @foreach($babsen as $idx => $babs)
+                  <option value="{{ $idx + 1 }}">{{ $babs['voornaam'] }} {{ $babs['achternaam'] }}</option>
+                  @endforeach
                 </select>
                 @error('functionaryFirst')
                     <div class="alert alert-danger">{{ $message }}</div>
@@ -288,9 +287,9 @@
               <div class="col-6">
                 <select id="functionarySecond" class="@error('functionarySecond') is-invalid @enderror">
                   <option value="0">Geen keuze</option>
-                  <option value="1">Babs een</option>
-                  <option value="2">Babs twee</option>
-                  <option value="3">Babs drie</option>
+                  @foreach($babsen as $idx => $babs)
+                  <option value="{{ $idx + 1 }}">{{ $babs['voornaam'] }} {{ $babs['achternaam'] }}</option>
+                  @endforeach
                 </select>
                 @error('functionarySecond')
                     <div class="alert alert-danger">{{ $message }}</div>
@@ -304,9 +303,9 @@
               <div class="col-6">
                 <select id="functionaryThird" class="@error('functionaryThird') is-invalid @enderror">
                   <option value="0">Geen keuze</option>
-                  <option value="1">Babs een</option>
-                  <option value="2">Babs twee</option>
-                  <option value="3">Babs drie</option>
+                  @foreach($babsen as $idx => $babs)
+                  <option value="{{ $idx + 1 }}">{{ $babs['voornaam'] }} {{ $babs['achternaam'] }}</option>
+                  @endforeach
                 </select>
                 @error('functionaryThird')
                     <div class="alert alert-danger">{{ $message }}</div>
