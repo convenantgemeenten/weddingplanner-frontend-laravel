@@ -114,3 +114,17 @@ header #hdrPrice .price{
     background-color:#009688;
     color:white;
   }
+
+
+  @media only screen and (max-width: 800px) {
+    .content-container .row{
+      margin-left:0;margin-right:0;
+    }
+      #plannerContent .row{
+        border-bottom:1px solid #FFF;
+      }
+      #plannerContent .col-1{
+        border-right:1px solid #FFF;
+        height:100%;
+      }
+  }

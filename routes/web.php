@@ -22,3 +22,4 @@ Route::group(['prefix' => 'test'],
     }
 );
 Route::get('/beschikbaarheid', 'AvailabilityController@availability');
+Route::get('/reservering', 'ReservationController@reservation');
