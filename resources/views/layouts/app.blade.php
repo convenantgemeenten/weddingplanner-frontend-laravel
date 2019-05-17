@@ -7,7 +7,7 @@
         <title>Weddingplanner - @yield('title')</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="{{ URL::asset('css/datepicker3.css') }}"> -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <!-- <script src="{{ URL::asset('js/bootstrap-datepicker.js') }}"></script>
         <script src="{{ URL::asset('js/locales/bootstrap-datepicker.nl.js') }}"></script> -->
@@ -48,7 +48,9 @@
                     </div>
                     <div id="hdrPrice" class="col-2">
                         <span class="total">Totaal:</span>
-                        <span class="price">@yield('price')</span>
+                        <span class="price">@hasSection('price')
+                                                @yield('price')
+                                            @endif</span>
                     </div>
                 </div>
             </header>

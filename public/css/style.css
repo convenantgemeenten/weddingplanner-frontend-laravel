@@ -28,6 +28,10 @@ header #hdrPrice .price{
     padding:5px;
 }
 
+input[type='checkbox'], input[type='radio'] {
+  height:1em;
+}
+
 
 /*PLANNER*/
 
@@ -128,3 +132,35 @@ header #hdrPrice .price{
         height:100%;
       }
   }
+
+  /*Reservering / Melding*/
+
+  .button-digid-icon {
+    width: 50px;
+    height:50px;
+    background: url(/weddingplanner-frontend-laravel/public/images/logo_digid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 0;
+    border-radius: 5px;
+}
+
+.form-check{
+  text-align: left;
+  padding-left:0px;
+}
+.form-check input{
+  text-align: left;
+  width:1em;
+}
+
+.melding .row{
+  margin-bottom:10px;
+}
+.melding h2{
+  margin-top:10px;
+}
+#tempError{
+  color:red;
+  font-weight: bold;
+}

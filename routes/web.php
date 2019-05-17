@@ -23,3 +23,8 @@ Route::group(['prefix' => 'test'],
 );
 Route::get('/beschikbaarheid', 'AvailabilityController@availability');
 Route::get('/reservering', 'ReservationController@reservation');
+Route::get('/melding', 'NotifyController@notify');
+
+Route::get('NotifyAjaxRequest', 'NotifyController@ajaxRequest');
+
+Route::post('NotifyAjaxRequest', 'NotifyController@ajaxRequestPost');

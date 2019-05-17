@@ -2,7 +2,7 @@
 
 @section('title', 'Beschikbaarheid controleren')
 
-@section('price', '€ 0,00')
+@section('pricee', '€ 0,00')
 
 @section('header')
     @parent
