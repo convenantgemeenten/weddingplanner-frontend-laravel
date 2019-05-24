@@ -23,12 +23,12 @@ class LocationConsumer extends WeddingplannerConsumer {
 
         $aJSON = json_decode($sResponse, true);
         $aLocations = [];
-        
+        if(is_array($aJSON)){
         foreach ($aJSON['@graph']['@value'] as $aLocation) {
             
             $aLocations[] =  parse_url( $aLocation['@id'], PHP_URL_PATH); // @todo: prefix weghalen zodra die uit de API is
         }
-
+		}
         return $aLocations;
     }
 
@@ -69,6 +69,7 @@ class LocationConsumer extends WeddingplannerConsumer {
                 'id'         => @$aJSON['@id'],
                 'url'        => @$aJSON['url'],
                 'naam'       => @$aJSON['naam'],
+                'foto'       => @$aJSON['foto'],
                 'email'      => @$aJSON['contactpunt']['emailadres'],
                 'telefoon'   => @$aJSON['contactpunt']['telefoonnummer'],
                 'prijs'      => @$aJSON['prijs']['@value'],

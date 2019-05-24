@@ -13,6 +13,7 @@ class AvailabilityController extends Controller {
             [
                 'locations' => (new LocationConsumer())->getDetailedLocationList()
                 , 'babsen' =>  (new BabsConsumer())->getDetailedBabsList()
+                , 'events' => ARRAY(Array("name"=>"APIevent","startdate"=>"2019-05-24 12:00","enddate"=>"2019-05-24 13:00"))
                 , 'message' => ''
             ]
         );

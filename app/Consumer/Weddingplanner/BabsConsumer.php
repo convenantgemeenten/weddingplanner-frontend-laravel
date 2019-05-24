@@ -30,17 +30,20 @@ class BabsConsumer extends WeddingplannerConsumer {
 
         $aJSON = json_decode($sResponse, true);
         $aBabs = [];
-        
-        foreach ($aJSON['@graph']['@value'] as $aRetval) {
-            $aBabs[] = [
-                'voornaam'      => @$aRetval['voornaam'],
-                'achternaam'    => @$aRetval['achternaam'],
-                'email'         => @$aRetval['contactpunt']['emailadres'],
-                'telefoon'      => @$aRetval['contactpunt']['telefoonnumer'],
-                'omschrijving'  => @$aRetval['omschrijving']
-            ];
+        if(is_array($aJSON)){
+            foreach ($aJSON['@graph']['@value'] as $aRetval) {
+                $aBabs[] = [
+                    'voornaam'      => @$aRetval['voornaam'],
+                    'tussenvoegsel' => @$aRetval['tussenvoegsel'],
+                    'achternaam'    => @$aRetval['achternaam'],
+                    'email'         => @$aRetval['contactpunt']['emailadres'],
+                    'telefoon'      => @$aRetval['contactpunt']['telefoonnumer'],
+                    'omschrijving'  => @$aRetval['omschrijving'],
+                    'foto'          => @$aRetval['foto']
+                ];
+            }
         }
-
+        
         return $aBabs;
     }
 }
