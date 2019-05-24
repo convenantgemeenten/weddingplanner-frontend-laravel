@@ -25,6 +25,9 @@ Route::get('/beschikbaarheid', 'AvailabilityController@availability');
 Route::get('/reservering', 'ReservationController@reservation');
 Route::get('/melding', 'NotifyController@notify');
 
-Route::get('NotifyAjaxRequest', 'NotifyController@ajaxRequest');
+Route::get('ReservationAjaxRequest', 'ReservationController@ajaxRequest');
+Route::post('ReservationAjaxRequest', 'ReservationController@ajaxRequestPost');
+Route::post('ReservationAjaxRequestDigiD', 'ReservationController@ajaxRequestPostDigiD');
 
+Route::get('NotifyAjaxRequest', 'NotifyController@ajaxRequest');
 Route::post('NotifyAjaxRequest', 'NotifyController@ajaxRequestPost');
