@@ -2,7 +2,7 @@
 
 @section('title', 'Melding')
 
-@section('header')
+@section('htmlheader')
     @parent
     <script src='/js/melding.js'></script>
     <script src='/weddingplanner-frontend-laravel/public/js/melding.js'></script>

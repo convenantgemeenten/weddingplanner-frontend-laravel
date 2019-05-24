@@ -4,10 +4,11 @@
 
 @section('pricee', '€ 0,00')
 
-@section('header')
+@section('htmlheader')
     @parent
     <script src='/js/reservering.js'></script>
     <script src='/weddingplanner-frontend-laravel/public/js/reservering.js'></script>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 @endsection
 
 @section('content')
@@ -73,7 +74,7 @@
                         <div>Telefoonnummer (verplicht)</div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <div  class="form-group"><input type="text" name="" value="" class="form-control @error('Phone1') is-invalid @enderror"/></div>
+                        <div  class="form-group"><input type="text" name="phone1" value="" class="form-control @error('Phone1') is-invalid @enderror"/></div>
                         @error('Phone1')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -84,7 +85,7 @@
                         <div>E-mailadres (verplicht)</div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <div  class="form-group"><input type="text" name="" value="" class="form-control @error('Email1') is-invalid @enderror"/></div>
+                        <div  class="form-group"><input type="text" name="email1" value="" class="form-control @error('Email1') is-invalid @enderror"/></div>
                         @error('Email1')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -100,7 +101,7 @@
                     <div>Voornamen</div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div  class="form-group"><input type="text" name="" value="" class="form-control"/></div>
+                    <div  class="form-group"><input type="text" name="firstname2" value="" class="form-control"/></div>
                 </div>
             </div>
             <div class="row">
@@ -108,7 +109,7 @@
                     <div>Tussenvoegsel</div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div  class="form-group"><input type="text" name="" value="" class="form-control"/></div>
+                    <div  class="form-group"><input type="text" name="middlename2" value="" class="form-control"/></div>
                 </div>
             </div>
             <div class="row">
@@ -116,7 +117,7 @@
                     <div>Achternaam</div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div  class="form-group"><input type="text" name="" value="" class="form-control"/></div>
+                    <div  class="form-group"><input type="text" name="lastname2" value="" class="form-control"/></div>
                 </div>
             </div>
             <div class="row">
@@ -124,7 +125,14 @@
                     <div>Geboortedatum</div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div  class="form-group"><input type="text" name="" value="" class="form-control"/></div>
+                    <div  class="form-group">
+                        <div class="input-group date" id="dp1">
+                            <input type="text" name="birthdate2" value="" class="form-control datepicker" data-date-format="dd-mm-yyyy"/>
+                            <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-th"></span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -142,7 +150,7 @@
                         <div>Postcode (verplicht)</div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <div  class="form-group"><input type="text" name="" value="" class="form-control @error('Postcode') is-invalid @enderror"/></div>
+                        <div  class="form-group"><input type="text" name="postcode2" value="" class="form-control @error('Postcode') is-invalid @enderror"/></div>
                         @error('Postcode')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
@@ -155,9 +163,9 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-5"><input type="text" name="" value="" class="form-control @error('houseNr') is-invalid @enderror"/></div>
+                                <div class="col-5"><input type="text" name="nr" value="" class="form-control @error('houseNr') is-invalid @enderror"/></div>
                                 <div class="col-1">-</div>
-                                <div class="col-5"><input type="text" name="" value="" class="form-control"/></div>
+                                <div class="col-5"><input type="text" name="nr_add" value="" class="form-control"/></div>
                             </div>
                         </div>
                         @error('houseNr')
@@ -172,7 +180,7 @@
                     <div>Telefoonnummer (verplicht)</div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div  class="form-group"><input type="text" name="" value="" class="form-control @error('Phone2') is-invalid @enderror"/></div>
+                    <div  class="form-group"><input type="text" name="phone2" value="" class="form-control @error('Phone2') is-invalid @enderror"/></div>
                     @error('Phone2')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -183,7 +191,7 @@
                     <div>E-mailadres (verplicht)</div>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <div  class="form-group"><input type="text" name="" value="" class="form-control @error('Email2') is-invalid @enderror"/></div>
+                    <div  class="form-group"><input type="text" name="email2" value="" class="form-control @error('Email2') is-invalid @enderror"/></div>
                     @error('Email2')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
