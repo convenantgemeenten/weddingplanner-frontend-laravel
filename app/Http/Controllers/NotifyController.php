@@ -15,6 +15,11 @@ class NotifyController extends Controller {
             ]
         );
     }
+
+
+    public function notifyConfirmation() {
+        return view('melding-overzicht');
+    }
     
     public function ajaxRequest()
     {

@@ -14,16 +14,7 @@
         <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
        
-        {{-- <script src="{{ URL::asset('js/bootstrap-datepicker.js') }}"></script>
-        <script src="{{ URL::asset('js/locales/bootstrap-datepicker.nl.js') }}"></script>
-        <link rel="stylesheet" href="{{ URL::asset('css/datepicker3.css') }}"> --}}
-        {{-- <link href='{{ URL::asset('fullcalendar/packages/core/main.css') }}' rel='stylesheet' />
-        <link href='{{ URL::asset('fullcalendar/packages/daygrid/main.css') }}' rel='stylesheet' />
-        <script src='{{ URL::asset('fullcalendar/packages/core/main.js') }}'></script>
-        <script src='{{ URL::asset('fullcalendar/packages/interaction/main.js') }}'></script>
-        <script src='{{ URL::asset('fullcalendar/packages/daygrid/main.js') }}'></script>
 
-        <link href='{{ URL::asset('css/style.css') }}' rel='stylesheet' /> --}}
 
         <script src="/js/bootstrap-datepicker.js"></script>
         <script src="/js/locales/bootstrap-datepicker.nl.js"></script>
@@ -35,7 +26,7 @@
         <script src='/fullcalendar/packages/interaction/main.js'></script>
         <script src='/fullcalendar/packages/daygrid/main.js'></script>
 
-        <script src="/weddingplanner-frontend-laravel/public/js/bootstrap-datepicker.js"></script>
+        {{-- <script src="/weddingplanner-frontend-laravel/public/js/bootstrap-datepicker.js"></script>
         <script src="/weddingplanner-frontend-laravel/public/js/locales/bootstrap-datepicker.nl.js"></script>
         <link rel="stylesheet" href="/weddingplanner-frontend-laravel/public/css/datepicker3.css" />
         <link href="/weddingplanner-frontend-laravel/public/css/style.css" rel='stylesheet' />
@@ -43,7 +34,7 @@
         <link href='/weddingplanner-frontend-laravel/public/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
         <script src='/weddingplanner-frontend-laravel/public/fullcalendar/packages/core/main.js'></script>
         <script src='/weddingplanner-frontend-laravel/public/fullcalendar/packages/interaction/main.js'></script>
-        <script src='/weddingplanner-frontend-laravel/public/fullcalendar/packages/daygrid/main.js'></script>
+        <script src='/weddingplanner-frontend-laravel/public/fullcalendar/packages/daygrid/main.js'></script> --}}
         
         @section('htmlheader')
         @show
