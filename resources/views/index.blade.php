@@ -7,5 +7,6 @@
     <a href="/beschikbaarheid">Beschikbaarheid</a><br>
     <a href="/reservering">Reservering</a><br>
     <a href="/melding">Melding</a><br>
+    <a href="/melding-overzicht">Melding overzicht</a><br>
 </div>
 @endsection
